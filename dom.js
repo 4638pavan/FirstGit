@@ -49,18 +49,28 @@
 // }
 
 //QUERYSELECTOR //
-var header = document.querySelector("#main-header");
-header.getElementsByClassName.borderBottom="solid 4px #ccc";
+// var header = document.querySelector("#main-header");
+// header.getElementsByClassName.borderBottom="solid 4px #ccc";
 
-var input = document.querySelector("input");
-input.value ="Hello World";
+// var input = document.querySelector("input");
+// input.value ="Hello World";
 
-var submit = document.querySelector('input[type="submit"]');
-submit.value="SEND";
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value="SEND";
 
-var item =document.querySelector(".list-group-item");
-item.style.color="red";
+// var item =document.querySelector(".list-group-item");
+// item.style.color="red";
 
-var allItem =document.getElementById('addItem');
-allItem.style.color="green";
-allItem.style.fontWeight = 'bold'
+// var allItem =document.getElementById('addItem');
+// allItem.style.color="green";
+// allItem.style.fontWeight = 'bold'
+
+//QUERYSELECTORALL  //
+// var titles = document.querySelectorAll(".title");
+// console.log(titles);
+// titles[0].textContent ="Hello";
+
+var odd =document.querySelectorAll("li:nth-Child(odd)");
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor ="green";
+}
